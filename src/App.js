@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { PRODUCTS } from './product';
 import ProductList from './ProductList';
 import Cart from './Cart';
+import PromoBanner from './PromoBanner';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <header style={{ borderBottom: '2px solid #eaeaea', paddingBottom: '10px', marginBottom: '20px' }}>
         <h1 style={{ color: '#222' }}>Minerva Shopping Experience</h1>
       </header>
+      <PromoBanner />
       <main className="container">
         <ProductList products={PRODUCTS} onAddToCart={handleAddToCart} />
         <Cart cartItems={cartItems} />
