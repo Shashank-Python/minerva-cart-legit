@@ -14,7 +14,7 @@ function App() {
       const existingItem = prevItems.find((item) => item.id === product.id);
       if (existingItem) {
         return prevItems.map((item) =>
-          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+          item.id === product.id ? { ...item, quantity: item.quantity } : item
         );
       }
       return [...prevItems, { ...product, quantity: 1 }];
