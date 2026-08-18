@@ -12,3 +12,9 @@ test('calculates correct total price multiplier aggregations', () => {
   const totalElement = screen.getByText(/\$100/);
   expect(totalElement).toBeInTheDocument();
 });
+
+test('handles structural empty state layout correctly', () => {
+  render(<Cart cartItems={[]} />);
+  const emptyElement = screen.getByText(/Your cart is empty/i);
+  expect(emptyElement).toBeInTheDocument();
+});
