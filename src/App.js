@@ -3,6 +3,7 @@ import { PRODUCTS } from './product';
 import ProductList from './ProductList';
 import Cart from './Cart';
 import PromoBanner from './PromoBanner';
+import Footer from './Footer';
 import './App.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <ProductList products={PRODUCTS} onAddToCart={handleAddToCart} />
         <Cart cartItems={cartItems} />
       </main>
+      <Footer />
     </div>
   );
 }
