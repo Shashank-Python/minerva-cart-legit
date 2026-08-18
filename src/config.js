@@ -1,5 +1,5 @@
 export const CART_CONFIG = {
-  maxItemsPerLine: 10,
+  maxItemsPerLine: 15,
   freeShippingThreshold: 150,
   currencySymbol: '$'
 };
